@@ -1,13 +1,6 @@
-//
-//  AppDelegate.m
-//  CarrinhoAliexpress
-//
-//  Created by dainf on 09/03/17.
-//  Copyright © 2017 br.utfpr. All rights reserved.
-//
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "ListaProdutosViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,14 +10,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName: @"Main" bundle: nil];
-    ViewController *vc = [storyBoard instantiateViewControllerWithIdentifier: @"ViewController"];
+    
+    ListaProdutosViewController *vc = [ListaProdutosViewController new];
     
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: vc];
     
     self.window.rootViewController = nav;
     
-    // Override point for customization after application launch.
     return YES;
 }
 

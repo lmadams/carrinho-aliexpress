@@ -1,11 +1,10 @@
 
+
 #import <UIKit/UIKit.h>
 #import "ProdutoDao.h"
 
-@interface ViewController : UIViewController
+@interface ListaProdutosViewController : UITableViewController
 
 @property ProdutoDao *produtoDao;
 
-
 @end
-

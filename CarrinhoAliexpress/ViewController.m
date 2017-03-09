@@ -27,12 +27,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+
+//    Add btn para o carrinho de compras
     UIBarButtonItem *btnCarrinho = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
                                                                                  target:self
                                                                                  action:@selector(onClickCarrinho)];
     self.navigationItem.rightBarButtonItem = btnCarrinho;
+    
+    self.produtoDao = [ProdutoDao produtoDaoInstance];
 }
 
 // Vai para os detalhes do produto

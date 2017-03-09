@@ -9,10 +9,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Aliexpress-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ListaProdutosView" title="Aliexpress" id="BYZ-38-t0r" customClass="ListaProdutosViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -32,21 +33,17 @@
                                 <rect key="frame" x="142" y="166" width="61" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Detalhes"/>
-                                <connections>
-                                    <action selector="onClickProduto" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6f-x7-eqo"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Produto Detalhe View Controller-->
+        <!--Aliexpress-->
         <scene sceneID="4YE-p8-Zhl">
             <objects>
-                <viewController storyboardIdentifier="DetalheProdutosView" id="HLN-YK-f5q" customClass="ProdutoDetalheViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetalheProdutosView" title="Aliexpress" id="HLN-YK-f5q" customClass="ProdutoDetalheViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d6o-i9-blm"/>
                         <viewControllerLayoutGuide type="bottom" id="S4K-vg-AEc"/>
@@ -78,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="961" y="44"/>
         </scene>
-        <!--Carrinho View Controller-->
+        <!--Aliexpress-->
         <scene sceneID="ZSo-F4-y04">
             <objects>
-                <viewController storyboardIdentifier="CarrinhoView" id="I9B-hZ-D1m" customClass="CarrinhoViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CarrinhoView" title="Aliexpress" id="I9B-hZ-D1m" customClass="CarrinhoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aTs-jI-Ygt"/>
                         <viewControllerLayoutGuide type="bottom" id="I8Z-dC-Ufd"/>

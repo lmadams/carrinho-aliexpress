@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F5387AB51E720508005959EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AB41E720508005959EF /* main.m */; };
 		F5387AB81E720508005959EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AB71E720508005959EF /* AppDelegate.m */; };
-		F5387ABB1E720508005959EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ABA1E720508005959EF /* ViewController.m */; };
 		F5387ABE1E720508005959EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5387ABC1E720508005959EF /* Main.storyboard */; };
 		F5387AC01E720508005959EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5387ABF1E720508005959EF /* Assets.xcassets */; };
 		F5387AC31E720508005959EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5387AC11E720508005959EF /* LaunchScreen.storyboard */; };
@@ -17,6 +16,10 @@
 		F5387ACF1E720FAA005959EF /* CarrinhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ACE1E720FAA005959EF /* CarrinhoViewController.m */; };
 		F5387AD21E721497005959EF /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AD11E721497005959EF /* DBManager.m */; };
 		F5387AD51E7214C2005959EF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5387AD41E7214C2005959EF /* libsqlite3.0.tbd */; };
+		F5387AD71E721621005959EF /* carrinho_aliexpres.sql in Resources */ = {isa = PBXBuildFile; fileRef = F5387AD61E721621005959EF /* carrinho_aliexpres.sql */; };
+		F5387ADA1E721680005959EF /* Produto.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AD91E721680005959EF /* Produto.m */; };
+		F5387ADD1E721709005959EF /* ProdutoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ADC1E721709005959EF /* ProdutoDao.m */; };
+		F5387AE01E721B07005959EF /* ListaProdutosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ADF1E721B07005959EF /* ListaProdutosViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +27,6 @@
 		F5387AB41E720508005959EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F5387AB61E720508005959EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F5387AB71E720508005959EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F5387AB91E720508005959EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F5387ABA1E720508005959EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F5387ABD1E720508005959EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F5387ABF1E720508005959EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5387AC21E720508005959EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +38,13 @@
 		F5387AD01E721497005959EF /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		F5387AD11E721497005959EF /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		F5387AD41E7214C2005959EF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		F5387AD61E721621005959EF /* carrinho_aliexpres.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = carrinho_aliexpres.sql; sourceTree = "<group>"; };
+		F5387AD81E721680005959EF /* Produto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Produto.h; path = ../Produto.h; sourceTree = "<group>"; };
+		F5387AD91E721680005959EF /* Produto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Produto.m; path = ../Produto.m; sourceTree = "<group>"; };
+		F5387ADB1E721709005959EF /* ProdutoDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutoDao.h; sourceTree = "<group>"; };
+		F5387ADC1E721709005959EF /* ProdutoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoDao.m; sourceTree = "<group>"; };
+		F5387ADE1E721B07005959EF /* ListaProdutosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaProdutosViewController.h; sourceTree = "<group>"; };
+		F5387ADF1E721B07005959EF /* ListaProdutosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaProdutosViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		F5387AA71E720506005959EF = {
 			isa = PBXGroup;
 			children = (
+				F5387AD61E721621005959EF /* carrinho_aliexpres.sql */,
 				F5387AB21E720508005959EF /* CarrinhoAliexpress */,
 				F5387AB11E720507005959EF /* Products */,
 				F5387AD31E7214C2005959EF /* Frameworks */,
@@ -77,15 +86,19 @@
 				F5387AD01E721497005959EF /* DBManager.h */,
 				F5387AD11E721497005959EF /* DBManager.m */,
 				F5387ACE1E720FAA005959EF /* CarrinhoViewController.m */,
-				F5387AB91E720508005959EF /* ViewController.h */,
-				F5387ABA1E720508005959EF /* ViewController.m */,
 				F5387ABC1E720508005959EF /* Main.storyboard */,
 				F5387ABF1E720508005959EF /* Assets.xcassets */,
 				F5387AC11E720508005959EF /* LaunchScreen.storyboard */,
 				F5387AC41E720508005959EF /* Info.plist */,
 				F5387AB31E720508005959EF /* Supporting Files */,
 				F5387ACA1E7207A2005959EF /* ProdutoDetalheViewController.h */,
+				F5387AD81E721680005959EF /* Produto.h */,
+				F5387AD91E721680005959EF /* Produto.m */,
 				F5387ACB1E7207A2005959EF /* ProdutoDetalheViewController.m */,
+				F5387ADB1E721709005959EF /* ProdutoDao.h */,
+				F5387ADC1E721709005959EF /* ProdutoDao.m */,
+				F5387ADE1E721B07005959EF /* ListaProdutosViewController.h */,
+				F5387ADF1E721B07005959EF /* ListaProdutosViewController.m */,
 			);
 			path = CarrinhoAliexpress;
 			sourceTree = "<group>";
@@ -166,6 +179,7 @@
 			files = (
 				F5387AC31E720508005959EF /* LaunchScreen.storyboard in Resources */,
 				F5387AC01E720508005959EF /* Assets.xcassets in Resources */,
+				F5387AD71E721621005959EF /* carrinho_aliexpres.sql in Resources */,
 				F5387ABE1E720508005959EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,9 +191,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5387ADD1E721709005959EF /* ProdutoDao.m in Sources */,
 				F5387ACC1E7207A2005959EF /* ProdutoDetalheViewController.m in Sources */,
-				F5387ABB1E720508005959EF /* ViewController.m in Sources */,
 				F5387AB81E720508005959EF /* AppDelegate.m in Sources */,
+				F5387AE01E721B07005959EF /* ListaProdutosViewController.m in Sources */,
+				F5387ADA1E721680005959EF /* Produto.m in Sources */,
 				F5387AD21E721497005959EF /* DBManager.m in Sources */,
 				F5387ACF1E720FAA005959EF /* CarrinhoViewController.m in Sources */,
 				F5387AB51E720508005959EF /* main.m in Sources */,
