@@ -1,0 +1,314 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5387AB51E720508005959EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AB41E720508005959EF /* main.m */; };
+		F5387AB81E720508005959EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AB71E720508005959EF /* AppDelegate.m */; };
+		F5387ABB1E720508005959EF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ABA1E720508005959EF /* ViewController.m */; };
+		F5387ABE1E720508005959EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5387ABC1E720508005959EF /* Main.storyboard */; };
+		F5387AC01E720508005959EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5387ABF1E720508005959EF /* Assets.xcassets */; };
+		F5387AC31E720508005959EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5387AC11E720508005959EF /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F5387AB01E720507005959EF /* CarrinhoAliexpress.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarrinhoAliexpress.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5387AB41E720508005959EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5387AB61E720508005959EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F5387AB71E720508005959EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F5387AB91E720508005959EF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F5387ABA1E720508005959EF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F5387ABD1E720508005959EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F5387ABF1E720508005959EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5387AC21E720508005959EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F5387AC41E720508005959EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5387AAD1E720506005959EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5387AA71E720506005959EF = {
+			isa = PBXGroup;
+			children = (
+				F5387AB21E720508005959EF /* CarrinhoAliexpress */,
+				F5387AB11E720507005959EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5387AB11E720507005959EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5387AB01E720507005959EF /* CarrinhoAliexpress.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5387AB21E720508005959EF /* CarrinhoAliexpress */ = {
+			isa = PBXGroup;
+			children = (
+				F5387AB61E720508005959EF /* AppDelegate.h */,
+				F5387AB71E720508005959EF /* AppDelegate.m */,
+				F5387AB91E720508005959EF /* ViewController.h */,
+				F5387ABA1E720508005959EF /* ViewController.m */,
+				F5387ABC1E720508005959EF /* Main.storyboard */,
+				F5387ABF1E720508005959EF /* Assets.xcassets */,
+				F5387AC11E720508005959EF /* LaunchScreen.storyboard */,
+				F5387AC41E720508005959EF /* Info.plist */,
+				F5387AB31E720508005959EF /* Supporting Files */,
+			);
+			path = CarrinhoAliexpress;
+			sourceTree = "<group>";
+		};
+		F5387AB31E720508005959EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5387AB41E720508005959EF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5387AAF1E720506005959EF /* CarrinhoAliexpress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5387AC71E720508005959EF /* Build configuration list for PBXNativeTarget "CarrinhoAliexpress" */;
+			buildPhases = (
+				F5387AAC1E720506005959EF /* Sources */,
+				F5387AAD1E720506005959EF /* Frameworks */,
+				F5387AAE1E720506005959EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CarrinhoAliexpress;
+			productName = CarrinhoAliexpress;
+			productReference = F5387AB01E720507005959EF /* CarrinhoAliexpress.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5387AA81E720506005959EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = br.utfpr;
+				TargetAttributes = {
+					F5387AAF1E720506005959EF = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F5387AAB1E720506005959EF /* Build configuration list for PBXProject "CarrinhoAliexpress" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5387AA71E720506005959EF;
+			productRefGroup = F5387AB11E720507005959EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5387AAF1E720506005959EF /* CarrinhoAliexpress */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5387AAE1E720506005959EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5387AC31E720508005959EF /* LaunchScreen.storyboard in Resources */,
+				F5387AC01E720508005959EF /* Assets.xcassets in Resources */,
+				F5387ABE1E720508005959EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5387AAC1E720506005959EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5387ABB1E720508005959EF /* ViewController.m in Sources */,
+				F5387AB81E720508005959EF /* AppDelegate.m in Sources */,
+				F5387AB51E720508005959EF /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F5387ABC1E720508005959EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5387ABD1E720508005959EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F5387AC11E720508005959EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5387AC21E720508005959EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5387AC51E720508005959EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5387AC61E720508005959EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5387AC81E720508005959EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarrinhoAliexpress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.utfpr.CarrinhoAliexpress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5387AC91E720508005959EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CarrinhoAliexpress/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.utfpr.CarrinhoAliexpress;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5387AAB1E720506005959EF /* Build configuration list for PBXProject "CarrinhoAliexpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5387AC51E720508005959EF /* Debug */,
+				F5387AC61E720508005959EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5387AC71E720508005959EF /* Build configuration list for PBXNativeTarget "CarrinhoAliexpress" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5387AC81E720508005959EF /* Debug */,
+				F5387AC91E720508005959EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F5387AA81E720506005959EF /* Project object */;
+}
