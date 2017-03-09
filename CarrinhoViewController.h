@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CarrinhoViewController.h
 //  CarrinhoAliexpress
 //
 //  Created by dainf on 09/03/17.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-
+@interface CarrinhoViewController : UIViewController
 
 @end
-

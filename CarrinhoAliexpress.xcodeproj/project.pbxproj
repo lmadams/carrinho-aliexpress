@@ -13,6 +13,10 @@
 		F5387ABE1E720508005959EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5387ABC1E720508005959EF /* Main.storyboard */; };
 		F5387AC01E720508005959EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5387ABF1E720508005959EF /* Assets.xcassets */; };
 		F5387AC31E720508005959EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5387AC11E720508005959EF /* LaunchScreen.storyboard */; };
+		F5387ACC1E7207A2005959EF /* ProdutoDetalheViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ACB1E7207A2005959EF /* ProdutoDetalheViewController.m */; };
+		F5387ACF1E720FAA005959EF /* CarrinhoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ACE1E720FAA005959EF /* CarrinhoViewController.m */; };
+		F5387AD21E721497005959EF /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AD11E721497005959EF /* DBManager.m */; };
+		F5387AD51E7214C2005959EF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F5387AD41E7214C2005959EF /* libsqlite3.0.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		F5387ABF1E720508005959EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F5387AC21E720508005959EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F5387AC41E720508005959EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5387ACA1E7207A2005959EF /* ProdutoDetalheViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProdutoDetalheViewController.h; sourceTree = "<group>"; };
+		F5387ACB1E7207A2005959EF /* ProdutoDetalheViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoDetalheViewController.m; sourceTree = "<group>"; };
+		F5387ACD1E720FAA005959EF /* CarrinhoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CarrinhoViewController.h; path = ../CarrinhoViewController.h; sourceTree = "<group>"; };
+		F5387ACE1E720FAA005959EF /* CarrinhoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CarrinhoViewController.m; path = ../CarrinhoViewController.m; sourceTree = "<group>"; };
+		F5387AD01E721497005959EF /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		F5387AD11E721497005959EF /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		F5387AD41E7214C2005959EF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5387AD51E7214C2005959EF /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				F5387AB21E720508005959EF /* CarrinhoAliexpress */,
 				F5387AB11E720507005959EF /* Products */,
+				F5387AD31E7214C2005959EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +73,10 @@
 			children = (
 				F5387AB61E720508005959EF /* AppDelegate.h */,
 				F5387AB71E720508005959EF /* AppDelegate.m */,
+				F5387ACD1E720FAA005959EF /* CarrinhoViewController.h */,
+				F5387AD01E721497005959EF /* DBManager.h */,
+				F5387AD11E721497005959EF /* DBManager.m */,
+				F5387ACE1E720FAA005959EF /* CarrinhoViewController.m */,
 				F5387AB91E720508005959EF /* ViewController.h */,
 				F5387ABA1E720508005959EF /* ViewController.m */,
 				F5387ABC1E720508005959EF /* Main.storyboard */,
@@ -67,6 +84,8 @@
 				F5387AC11E720508005959EF /* LaunchScreen.storyboard */,
 				F5387AC41E720508005959EF /* Info.plist */,
 				F5387AB31E720508005959EF /* Supporting Files */,
+				F5387ACA1E7207A2005959EF /* ProdutoDetalheViewController.h */,
+				F5387ACB1E7207A2005959EF /* ProdutoDetalheViewController.m */,
 			);
 			path = CarrinhoAliexpress;
 			sourceTree = "<group>";
@@ -77,6 +96,14 @@
 				F5387AB41E720508005959EF /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5387AD31E7214C2005959EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5387AD41E7214C2005959EF /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5387ACC1E7207A2005959EF /* ProdutoDetalheViewController.m in Sources */,
 				F5387ABB1E720508005959EF /* ViewController.m in Sources */,
 				F5387AB81E720508005959EF /* AppDelegate.m in Sources */,
+				F5387AD21E721497005959EF /* DBManager.m in Sources */,
+				F5387ACF1E720FAA005959EF /* CarrinhoViewController.m in Sources */,
 				F5387AB51E720508005959EF /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
