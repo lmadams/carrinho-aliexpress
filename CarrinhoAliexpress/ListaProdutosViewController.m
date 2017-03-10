@@ -8,6 +8,7 @@
 
 #import "ListaProdutosViewController.h"
 #import "ProdutoDetalheViewController.h"
+#import "CarrinhoViewController.h"
 
 @interface ListaProdutosViewController ()
 
@@ -34,12 +35,11 @@
 - (void) onClickCarrinho {
 
     
-//    UIStoryboard *storeBoard = [UIStoryboard storyboardWithName: @"Main"
-//                                                         bundle: nil];
-//    UIViewController *carrinhoView = [storeBoard instantiateViewControllerWithIdentifier: @"CarrinhoView"];
-//    
-//    [self.navigationController pushViewController: carrinhoView
-//                                         animated: YES];
+    CarrinhoViewController *vc = [CarrinhoViewController new];
+    
+    //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: vc];
+    [self.navigationController pushViewController: vc
+                                         animated: YES];
 }
 
 // Vai para os detalhes do produto

@@ -7,6 +7,7 @@
 //
 
 #import "CarrinhoViewController.h"
+#import "ItemCompra.h"
 
 @interface CarrinhoViewController ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _compraDao = [CompraDao compraDaoInstance];
     // Do any additional setup after loading the view.
 }
 
@@ -23,15 +25,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [_compraDao size];
 }
-*/
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
+    ItemCompra *item = [_compraDao itemNaLinha:indexPath.row];
+    cell.textLabel.text = item.produto.nome;
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Quantidade '%f' vezes '%f' igual '%f'", item.quantidade, item.produto.valor, item.valor];
+    return cell;
+}
 
 @end

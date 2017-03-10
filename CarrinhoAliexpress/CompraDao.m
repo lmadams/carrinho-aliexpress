@@ -23,11 +23,20 @@ static CompraDao *instance = nil;
 
 -(CompraDao*)init{
     self = [super init];
+    self.compra = [Compra new];
     return self;
 }
 
 -(void)addItem:(ItemCompra *)item{
     [self.compra.itens addObject:item];
+}
+
+-(int)size{
+    return [_compra.itens count];
+}
+
+-(ItemCompra*) itemNaLinha:(NSInteger)index{
+    return [_compra.itens objectAtIndex:index];
 }
 
 @end

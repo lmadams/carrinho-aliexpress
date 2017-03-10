@@ -16,4 +16,8 @@
 
 -(void)addItem:(ItemCompra*) item;
 
+-(int) size;
+
+-(ItemCompra*) itemNaLinha:(NSInteger)index;
+
 @end

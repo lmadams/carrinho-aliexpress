@@ -9,6 +9,7 @@
 #import "ProdutoDetalheViewController.h"
 #import "ItemCompra.h"
 #import "CompraDao.h"
+#import "CarrinhoViewController.h"
 
 @interface ProdutoDetalheViewController ()
 
@@ -59,11 +60,10 @@
     CompraDao *dao = [CompraDao compraDaoInstance];
     [dao addItem:item];
     
-    UIStoryboard *storeBoard = [UIStoryboard storyboardWithName: @"Main"
-                                                         bundle: nil];
-    UIViewController *carrinhoView = [storeBoard instantiateViewControllerWithIdentifier: @"CarrinhoView"];
+    CarrinhoViewController *vc = [CarrinhoViewController new];
     
-    [self.navigationController pushViewController: carrinhoView
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController: vc];
+    [self.navigationController pushViewController: vc
                                          animated: YES];
 }
 /*

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CompraDao.h"
 
-@interface CarrinhoViewController : UIViewController
+@interface CarrinhoViewController : UITableViewController
+
+@property CompraDao *compraDao;
 
 @end
