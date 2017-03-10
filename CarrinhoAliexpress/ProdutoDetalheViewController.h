@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Produto.h"
 
 @interface ProdutoDetalheViewController : UIViewController
+
+@property Produto *produto;
+@property IBOutlet UILabel *nome;
+@property IBOutlet UILabel *descricao;
+@property IBOutlet UILabel *valor;
 
 @end

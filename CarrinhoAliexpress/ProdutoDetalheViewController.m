@@ -7,6 +7,8 @@
 //
 
 #import "ProdutoDetalheViewController.h"
+#import "ItemCompra.h"
+#import "CompraDao.h"
 
 @interface ProdutoDetalheViewController ()
 
@@ -16,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.nome.text = self.produto.nome;
+    self.descricao.text = self.produto.descricao;
+    self.valor.text = [NSString stringWithFormat:@"R$ '%f'", self.produto.valor];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,15 +30,42 @@
 
 // Metodo onClick para ir para o carrinho de compras
 - (IBAction) onClickAddProduto {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Quantidade" message:nil preferredStyle:UIAlertControllerStyleAlert];
+    
+    [alert addTextFieldWithConfigurationHandler:^(UITextField * textField){
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+    }];
+    UIAlertAction *okAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                     handler:^(UIAlertAction *action){
+                                                         UITextField *qtd = [alert.textFields firstObject];
+                                                         NSLog(@"Passou por aqui");
+                                                         
+                                                         [self adicionarProduto:[qtd.text intValue]];
+                                                     }];
+    
+    [alert addAction:okAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+
+}
+
+-(void) adicionarProduto:(NSInteger) qtd{
+    
+    ItemCompra* item = [ItemCompra new];
+    item.produto = _produto;
+    item.quantidade = qtd;
+    item.valor = qtd * _produto.valor;
+    
+    CompraDao *dao = [CompraDao compraDaoInstance];
+    [dao addItem:item];
+    
     UIStoryboard *storeBoard = [UIStoryboard storyboardWithName: @"Main"
                                                          bundle: nil];
     UIViewController *carrinhoView = [storeBoard instantiateViewControllerWithIdentifier: @"CarrinhoView"];
     
     [self.navigationController pushViewController: carrinhoView
                                          animated: YES];
-
 }
-
 /*
 #pragma mark - Navigation
 

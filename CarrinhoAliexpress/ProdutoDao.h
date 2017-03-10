@@ -7,4 +7,8 @@
 
 +(ProdutoDao*) produtoDaoInstance;
 
+-(int) size;
+
+-(Produto*) produtoNaLinha:(NSInteger) linha;
+
 @end

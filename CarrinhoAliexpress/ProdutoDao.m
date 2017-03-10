@@ -47,4 +47,11 @@ static ProdutoDao *instancia = nil;
         [self.produtos addObject: prod];
     }
 }
+-(int) size{
+    return [_produtos count];
+}
+-(Produto*) produtoNaLinha:(NSInteger)linha{
+    return [_produtos objectAtIndex:linha];
+}
+
 @end

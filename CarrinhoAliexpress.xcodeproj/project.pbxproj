@@ -20,6 +20,9 @@
 		F5387ADA1E721680005959EF /* Produto.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AD91E721680005959EF /* Produto.m */; };
 		F5387ADD1E721709005959EF /* ProdutoDao.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ADC1E721709005959EF /* ProdutoDao.m */; };
 		F5387AE01E721B07005959EF /* ListaProdutosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387ADF1E721B07005959EF /* ListaProdutosViewController.m */; };
+		F5387AE31E722500005959EF /* Compra.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AE21E722500005959EF /* Compra.m */; };
+		F5387AE61E722AAB005959EF /* ItemCompra.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AE51E722AAB005959EF /* ItemCompra.m */; };
+		F5387AE91E722B73005959EF /* CompraDao.m in Sources */ = {isa = PBXBuildFile; fileRef = F5387AE81E722B73005959EF /* CompraDao.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,12 @@
 		F5387ADC1E721709005959EF /* ProdutoDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProdutoDao.m; sourceTree = "<group>"; };
 		F5387ADE1E721B07005959EF /* ListaProdutosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListaProdutosViewController.h; sourceTree = "<group>"; };
 		F5387ADF1E721B07005959EF /* ListaProdutosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListaProdutosViewController.m; sourceTree = "<group>"; };
+		F5387AE11E722500005959EF /* Compra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compra.h; sourceTree = "<group>"; };
+		F5387AE21E722500005959EF /* Compra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compra.m; sourceTree = "<group>"; };
+		F5387AE41E722AAB005959EF /* ItemCompra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCompra.h; sourceTree = "<group>"; };
+		F5387AE51E722AAB005959EF /* ItemCompra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCompra.m; sourceTree = "<group>"; };
+		F5387AE71E722B73005959EF /* CompraDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompraDao.h; sourceTree = "<group>"; };
+		F5387AE81E722B73005959EF /* CompraDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompraDao.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,13 +101,19 @@
 				F5387AC41E720508005959EF /* Info.plist */,
 				F5387AB31E720508005959EF /* Supporting Files */,
 				F5387ACA1E7207A2005959EF /* ProdutoDetalheViewController.h */,
+				F5387ACB1E7207A2005959EF /* ProdutoDetalheViewController.m */,
 				F5387AD81E721680005959EF /* Produto.h */,
 				F5387AD91E721680005959EF /* Produto.m */,
-				F5387ACB1E7207A2005959EF /* ProdutoDetalheViewController.m */,
 				F5387ADB1E721709005959EF /* ProdutoDao.h */,
 				F5387ADC1E721709005959EF /* ProdutoDao.m */,
 				F5387ADE1E721B07005959EF /* ListaProdutosViewController.h */,
 				F5387ADF1E721B07005959EF /* ListaProdutosViewController.m */,
+				F5387AE11E722500005959EF /* Compra.h */,
+				F5387AE21E722500005959EF /* Compra.m */,
+				F5387AE41E722AAB005959EF /* ItemCompra.h */,
+				F5387AE51E722AAB005959EF /* ItemCompra.m */,
+				F5387AE71E722B73005959EF /* CompraDao.h */,
+				F5387AE81E722B73005959EF /* CompraDao.m */,
 			);
 			path = CarrinhoAliexpress;
 			sourceTree = "<group>";
@@ -191,10 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5387AE91E722B73005959EF /* CompraDao.m in Sources */,
 				F5387ADD1E721709005959EF /* ProdutoDao.m in Sources */,
 				F5387ACC1E7207A2005959EF /* ProdutoDetalheViewController.m in Sources */,
+				F5387AE61E722AAB005959EF /* ItemCompra.m in Sources */,
 				F5387AB81E720508005959EF /* AppDelegate.m in Sources */,
 				F5387AE01E721B07005959EF /* ListaProdutosViewController.m in Sources */,
+				F5387AE31E722500005959EF /* Compra.m in Sources */,
 				F5387ADA1E721680005959EF /* Produto.m in Sources */,
 				F5387AD21E721497005959EF /* DBManager.m in Sources */,
 				F5387ACF1E720FAA005959EF /* CarrinhoViewController.m in Sources */,
