@@ -18,8 +18,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _compraDao = [CompraDao compraDaoInstance];
-    // Do any additional setup after loading the view.
-}
+    UIBarButtonItem *btnCarrinho = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd
+                                                                                 target:self
+                                                                                 action:@selector(salvar)];
+    self.navigationItem.rightBarButtonItem = btnCarrinho;}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -29,7 +31,9 @@
     return [_compraDao size];
 }
 
-
+-(void)salvar{
+    [_compraDao salvar];
+}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:nil];
     ItemCompra *item = [_compraDao itemNaLinha:indexPath.row];

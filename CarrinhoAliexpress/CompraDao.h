@@ -20,4 +20,6 @@
 
 -(ItemCompra*) itemNaLinha:(NSInteger)index;
 
+-(void)salvar;
+
 @end

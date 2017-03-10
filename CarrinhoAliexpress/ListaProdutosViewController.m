@@ -72,7 +72,7 @@
     Produto *produto = [_produtoDao produtoNaLinha:indexPath.row];
     cell.textLabel.text = produto.nome;
     cell.detailTextLabel.text = produto.descricao;
-    return cell;
+    return cell;                
 }
 
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
